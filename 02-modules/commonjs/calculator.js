@@ -1,8 +1,19 @@
-// ES Module – greet() Export
-export function greet() {
-    console.log("Hello Node.js");
+// CommonJS Calculator Module
+
+function add() {
+    console.log("add");
 }
 
-// ES Module – greet() Import
-import { greet } from "./message.js";
-greet();
+function subtract() {
+    console.log("subtract");
+}
+
+function multiply() {
+    console.log("Multiply");
+}
+
+module.exports = {
+    add,
+    subtract,
+    multiply
+};
